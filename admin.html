@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>รายการคำสั่งซื้อ | Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .page-head h1 { line-height: 1.4; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    #ordersTable {
+      width: 100%;
+      min-width: 820px;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    #ordersTable th,
+    #ordersTable td {
+      padding: var(--space-2) var(--space-3);
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    #ordersTable thead th {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--ink);
+      white-space: nowrap;
+      background: var(--cream);
+      border-bottom: 1px solid var(--bronze);
+    }
+
+    #ordersTable tbody td { color: var(--ink-soft); }
+    #ordersTable tbody tr:last-child td { border-bottom: 0; }
+
+    #ordersTable th:first-child,
+    #ordersTable td:first-child { white-space: nowrap; }
+
+    #ordersTable th:nth-child(5),
+    #ordersTable td:nth-child(5) { text-align: right; white-space: nowrap; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Body Scent</a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head page-head">
+          <h1>รายการคำสั่งซื้อ</h1>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">เรียงจากรายการล่าสุดก่อน</p>
+          <p class="caption">ข้อมูลมาจาก Google Sheet อาจล่าช้าได้ไม่กี่นาที</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th scope="col">วันเวลา</th>
+                <th scope="col">ชื่อลูกค้า</th>
+                <th scope="col">เบอร์โทร/Line</th>
+                <th scope="col">รายการสินค้า</th>
+                <th scope="col">จำนวนเงินรวม</th>
+                <th scope="col">หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="index.html">Body Scent</a>
+      <p>© 2026 Body Scent สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
